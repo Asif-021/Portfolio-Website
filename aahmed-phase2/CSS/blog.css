@@ -1,0 +1,88 @@
+/* General styling of the page*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+} 
+
+
+#blog-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*Styling layout of the form*/
+fieldset {
+    border: none;
+    padding: 2rem 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    background-image: url(../Images/bg1.jpg);
+}
+
+/*Styling for the form header*/
+h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/*Styling for the input titles*/
+label{
+    font-size: 1.4rem;
+    font-family: 'Quicksand', 'sans-serif';
+    font-weight: bold;
+}
+
+/*Styling for the input boxes*/
+#title, #content{
+    font-family: 'Sono', 'sans-serif' ;
+    margin-top: 0.5rem;
+}
+
+#content{
+    font-size: rem;
+}
+
+
+#title {
+    width: 75%;
+    max-width: 100%;
+    height: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/*Button Styling*/
+#buttons{
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="reset"], input[type="submit"]{
+    padding: 0.7rem 1.4rem;
+}

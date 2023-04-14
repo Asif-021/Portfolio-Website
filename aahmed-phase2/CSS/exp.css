@@ -1,0 +1,128 @@
+/*General  styling*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-image: url(../Images/bg1.jpg);*/
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    min-height: calc(100vh - 80px - 60px);
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+}
+
+/*Universal styling*/
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Quicksand', 'sans-serif';
+    margin: 1rem;
+}
+
+p, li, td{
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+/*Header container styling*/
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    border-right: solid 0.1rem white;
+}
+
+#bloglink{
+    border: 0;
+}
+
+/*List styling*/
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid black 0.1rem;
+    margin: 1rem 4rem;
+
+}
+.date-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    border-bottom: solid black 0.1rem;
+}
+
+.date{
+    margin-top: 0.4rem;
+    padding-right: 0.5rem;
+    border-right: solid 0.1rem black;
+}
+
+.item{
+    margin-top: 0.4rem;
+    padding-left: 0.5rem;
+}
+
+.desc{
+    margin: 1rem;
+    
+}
+
+/*Footer container styling*/
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+
+footer p{
+    border-right: solid white 0.1rem;
+    padding-right: 0.4rem;
+}
