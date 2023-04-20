@@ -1,0 +1,70 @@
+/*Page styling*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/*Form styling*/
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    background-image: url(../Images/bg1.jpg);
+}
+  
+#username, #password{
+    width: 100%;
+}
+
+#login-title{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+label{
+    font-size: 1.4rem;
+    font-family: 'Quicksand', 'sans-serif';
+}
+/* Style for the input fields */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'sans-serif';
+}
+
+/* Style for the submit button */
+#submit-button {
+    text-align: center;
+}
+
+#login-button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,146 @@
+/*General  styling/layout */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/bg1.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px - 60px);
+    flex-direction: column;
+    flex: 2;
+    margin: 0;
+}
+
+/*Main content styling*/
+article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+aside {
+    margin: 3rem;
+}
+
+aside nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav img {
+    margin: 0.5rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+}
+
+/*header links styling*/
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    border-right: solid 0.1rem white;
+}
+
+#bloglink{
+    border: 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0.3rem;
+}
+
+footer p{
+    border-right: solid white 0.1rem;
+    padding-right: 0.4rem;
+}
+
+#initials{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login a{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 0.15rem solid black;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2rem;
+    background-color: #333;
+}
+
+aside img{
+    width: 50px;
+    min-width: 50px;
+    height: auto;
+}
+
+aside a{
+    padding: 0 8rem;
+}
+
+figcaption{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
