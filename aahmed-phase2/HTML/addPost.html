@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/blog.css">
+    <link rel="stylesheet" href="../CSS/addPost.css">
+    <script src="../JS/addPost.js" defer></script>
 
     <title>Blog</title>
 </head>
 <body>
-    <form id="blog-form" method="get" action="">
+    <form id="blog-form" method="post" action="../PHP/addPost.php">
         <fieldset>
             <h1>Create a Blog Post</h1>
             <div id="title-field">
                 <label for="title">Title:</label><br>
-                <input type="text" id="title" name="title" placeholder="Title..." required><br><br>
+                <input type="text" id="title" name="title" placeholder="Title..."><br><br>
             </div>
             <div id="content-field"> 
                 <label for="content">Content:</label><br>
-                <textarea id="content" name="content" placeholder="Main Content..." rows="10" cols="40" required></textarea><br><br>
+                <textarea id="content" name="content" placeholder="Main Content..." rows="10" cols="40"></textarea><br><br>
             </div>
             <div id="buttons">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Clear">
+                <input type="submit" id="submit"  value="Submit" onclick="validateSubmit(event)">
+                <input type="reset" id="reset" value="Clear" onclick="confirmClear()">
             </div>
         </fieldset>
     </form>

@@ -1,88 +1,118 @@
-/* General styling of the page*/
-body {
+/*General  styling*/
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+}
+
+section {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #333;
-} 
-
-
-#blog-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-/*Styling layout of the form*/
-fieldset {
-    border: none;
-    padding: 2rem 5rem;
     background-color: white;
-    border-radius: 1rem;
-    text-align: center;
-    background-image: url(../Images/bg1.jpg);
+    background-size: cover;
+    width: 70rem;
 }
 
-/*Styling for the form header*/
-h1{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-family: 'Signika Negative', sans-serif;
+.headercontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
 }
 
-/*Styling for the input titles*/
-label{
-    font-size: 1.4rem;
-    font-family: 'Quicksand', 'sans-serif';
+header {
+    background-color: #333;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
-/*Styling for the input boxes*/
-#title, #content{
-    font-family: 'Sono', 'sans-serif' ;
-    margin-top: 0.5rem;
+main {
+    min-height: calc(100vh - 80px - 60px);
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
 }
 
-#content{
-    font-size: rem;
+footer {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
 }
 
+/*Universal styling*/
 
-#title {
-    width: 75%;
-    max-width: 100%;
-    height: 1rem;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-/*Button Styling*/
-#buttons{
+h2{
+    font-size: 2rem;
     text-align: center;
+    font-family: 'Quicksand', 'sans-serif';
+    margin: 1rem;
 }
 
-input[type="submit"] {
-    background-color: green;
+p, li, td{
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+/*Header container styling*/
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header nav a, #addPost{
     color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    border-right: solid 0.1rem white;
 }
 
-input[type="reset"] {
-    background-color: red;
+#bloglink, #addPost{
+    border: 0;
+}
+
+.divPost{
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20rem;
+}
+
+
+/*Footer container styling*/
+
+footer a{
     color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
+    text-decoration: none;
+    margin-left: 0.3rem;
 }
 
-input[type="reset"], input[type="submit"]{
-    padding: 0.7rem 1.4rem;
+footer p{
+    border-right: solid white 0.1rem;
+    padding-right: 0.4rem;
 }
