@@ -17,7 +17,7 @@
                     <a href="../HTML/homepage.html">Asif Ahmed</a>
                     <a href="../HTML/about.html">About Me</a>
                     <a href="../HTML/exp.html">Experience & Projects</a>
-                    <a id="bloglink" href="../HTML/blog.html">Blog</a>
+                    <a id="bloglink" href="../PHP/viewBlog.php">Blog</a>
                 </nav>
             </header>
             <div class="divPost">

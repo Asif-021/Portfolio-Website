@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     VALUES ('$date', '$title', '$content')";
 
     if ($conn->query($sql) === TRUE) {
-        header('Location: ../HTML/blog.html');
+        header('Location: ../HTML/viewBlog.html');
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
