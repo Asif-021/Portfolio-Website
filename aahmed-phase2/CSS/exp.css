@@ -14,7 +14,7 @@ header {
     color: white;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -64,7 +64,7 @@ header nav {
     padding: 1rem;
 }
 
-header nav a{
+header nav a, #login, #logout{
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
@@ -73,9 +73,11 @@ header nav a{
     border-right: solid 0.1rem white;
 }
 
-#bloglink{
+#bloglink, #logout, #login{
     border: 0;
 }
+
+
 
 /*List styling*/
 

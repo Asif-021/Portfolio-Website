@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/login.css?v=2">
-    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>Register</title>
 </head>
 <body>
-    <form id="login-form" method="post" action="../PHP/login.php">
+    <form id="register-form" method="post" action="../PHP/register.php">
         <fieldset>
-            <h1 id="login-title" title="Please enter your Login details">Login</h1>
+            <h1 id="register-title" title="registerTitle">Register</h1>
             <div id="username">
                 <label for="email">Email</label> <br>
-                <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+                <input type="email" name="newemail" id="email-field" placeholder="email@example.com" required>
             </div>
             <div id="password">
                 <label for="password">Password</label> <br>
-                <input type="password" name="password" id="password-field" required>
+                <input type="password" name="newpassword" id="password-field" required>
             </div>
             <div id="submit-button">
-                <input type="submit" value="Login" id="login-button">
+                <input type="submit" value="Register" id="register-button">
             </div>
-            <div id="register">
+            <div id="login">
                 <br>
-                <p>Don't have an account? Register <a href="../HTML/register.html">here</a></p>
+                <p>Already have an account? Login <a href="../HTML/login.html">here</a></p>
             </div>
         </fieldset>
     </form>

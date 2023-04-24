@@ -1,14 +1,14 @@
 CREATE TABLE blogEntries (
  ID int NOT NULL AUTO_INCREMENT,
- Date varchar(255),
- Title varchar(255),
- Content varchar(255),
+ Date text,
+ Title text,
+ Content text,
  PRIMARY KEY (ID)
 );
 
 CREATE TABLE loginDetails (
  ID int NOT NULL AUTO_INCREMENT,
- Email varchar(255),
- Password varchar(255),
+ Email text,
+ Password text,
  PRIMARY KEY (ID)
 );

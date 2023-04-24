@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/exp.css">
+    <link rel="stylesheet" href="../CSS/exp.css?v=2">
     <title>Experience & Projects</title>
 </head>
 <body>
-    <header>
+<header>
         <nav>
-            <a href="../HTML/homepage.html">Asif Ahmed</a>
-            <a href="../HTML/about.html">About Me</a>
-            <a href="../HTML/exp.html">Experience & Projects</a>
+            <a href="../PHP/homepage.php">Asif Ahmed</a>
+            <a href="../PHP/about.php">About Me</a>
+            <a href="../PHP/exp.php">Experience & Projects</a>
             <a id="bloglink" href="../PHP/viewBlog.php">Blog</a>
         </nav>
+        <?php 
+            if(isset($_SESSION['loggedIn'])){
+                echo '<a id="logout" href="../PHP/logout.php">Logout</a>';
+            }
+            else{
+                echo '<a id="login" href="../HTML/login.html">Login...</a>';
+            }
+        ?>
     </header>
     <main>
         <section class="exp">

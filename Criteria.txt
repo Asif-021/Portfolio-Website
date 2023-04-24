@@ -1,0 +1,48 @@
+
+DONE - Assessment Criteria 1 For the login form, your script will need to handle the submitted form by validating the credentials against the information in your database. 
+If correct then redirect to the addPost page using PHP
+
+DONE - Assessment Criteria 2 Upon successful login, your script will need to start a session
+
+DONE - Assessment Criteria 3 Create a script for ending the session, e.g. logout.php
+
+DONE - Assessment Criteria 4 Event processing for clicking the “Clear” button in addPost.html
+
+DONE - Assessment Criteria 5 Ensure that the code prevents submission of the form in addPost.html 
+(preventDefault()) if the fields title and post are left blank. The missing fields will need to be highlighted using CSS styles	
+
+DONE - Assessment Criteria 6 For posting a blog entry, your script will receive the input from the form in addPost.html, which then needs to be inserted into a MySQL database. 
+This information will include date, time, title and body text of the post. This script should then redirect to viewBlog.php
+
+DONE - Assessment Criteria 7 Each time a new entry is added, the most recent post appears on top, 
+followed by the next most recent post using a PHP driven technique (writing a sorting algorithm) as opposed to a SQL Query
+
+Assessment Criteria 8 Implement an extra feature specified in the coursework specification
+
+Assessment Criteria 9 Implement another extra feature specified in the coursework specification	
+
+DONE - Assessment Criteria 10 Is the website content relevant for a portfolio website?
+
+DONE - Assessment Criteria 11 Is the layout and design consistent for the web pages? i.e. blog design should be consistent with the website design	
+
+Assessment Criteria 12 Make the website responsive using media queries
+
+DONE - Assessment Criteria 13 Does the website have a consistent look and feel? I.e. the pages and forms should look like one website. 
+If not then this will lead to 20% of the phase 2 mark being deducted.
+
+DONE - Assessment Criteria 14 JavaScript and PHP presentation (i.e. indentation and structure)	
+
+
+
+• index.php - loads the home page for your website.
+• viewBlog.php - displays blog post stored in your table within the MySQL database on your
+server, and redirects the user to login.html if there is no entry.
+• login.html - asks the user to input an email address and password (Alternatively, this can also
+be included with index.php within the <aside> element).
+• login.php - checks the username and password by validating the credentials against
+information in your database. If login is successful then the script redirects to addPost;
+otherwise, display an error message.
+• logout.php - Resets all the $_SESSION variables and redirects to the homepage.
+• addEntry.php - asks the user to post a blog entry.
+• addPost.php - adds a new post to a simple table within a MySQL database and redirects to
+viewBlog.php.

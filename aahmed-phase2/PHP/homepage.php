@@ -1,3 +1,9 @@
+<?php 
+
+session_start(); 
+$_SESSION['returnURL'] = $_SERVER['REQUEST_URI'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +18,9 @@
 <body>
     <header>
         <nav>
-            <a href="../HTML/homepage.html">Asif Ahmed</a>
-            <a href="../HTML/about.html">About Me</a>
-            <a href="../HTML/exp.html">Experience & Projects</a>
+            <a href="../PHP/homepage.php">Asif Ahmed</a>
+            <a href="../PHP/about.php">About Me</a>
+            <a href="../PHP/exp.php">Experience & Projects</a>
             <a id="bloglink" href="../PHP/viewBlog.php">Blog</a>
         </nav>
     </header>
@@ -26,7 +32,16 @@
             </figure>
         </article> 
         <div id="login">
-            <a href="../HTML/login.html">Login</a>
+            <?php
+                
+                if(isset($_SESSION['loggedIn'])){
+                    echo '<a href="../PHP/logout.php">Logout</a>';
+                }
+                else{
+                    echo '<a href="../HTML/login.html">Login</a>';
+                }
+                
+            ?>
         </div>
         <aside>
             <nav>
