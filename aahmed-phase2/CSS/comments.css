@@ -20,24 +20,17 @@ section {
     width: 75rem;
 }
 
-.headercontainer{
-    display: flex;
-    flex-direction: row;
-    background-color: #333;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid white 0.7rem;
-}
 
 header {
     background-color: #333;
     color: white;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    border-bottom: solid white 0.7rem;
 }
 
 main {
@@ -82,7 +75,7 @@ header nav {
     padding: 1rem;
 }
 
-header nav a, #addPost, #login, #logout{
+header nav a, #login, #logout{
     color: white;
     text-decoration: none;
     margin: 0 0.5rem;
@@ -95,21 +88,12 @@ header nav a, #addPost, #login, #logout{
     border: 0;
 }
 
-.divPost{
-    display: flex;
-    background-color: #333;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+/*Blog post styling*/
 
-/* Blog entry styling */
-
-.blogEntryContainer{
+.blogPost{
     padding: 1rem 1rem 0.5rem 1rem; 
     border-bottom: solid 0.2rem white;
+    margin-bottom: 1rem;
 }
 
 .content, .date, .title{
@@ -125,14 +109,66 @@ header nav a, #addPost, #login, #logout{
     font-size: 1.5rem;
 }
 
-aside{
+/*Comment form styling*/
+
+#comment-form {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: baseline;
+    border-bottom: solid 0.2rem white;
+    margin-bottom: 1.5rem;
+    padding: 0 0.2rem 1rem 0.2rem;
 }
-img{
-    width: 1.7rem;
-    padding: 0 0 0 0;
+
+#comment{
+    min-width: 88%;
+    height: 2rem;
+}
+
+#postButton{
+    height: 2.4rem;
+    background-color: #333;
+    font-family: 'Quicksand', 'sans-serif';
+    font-weight: bold;
+    color: white;
+}
+
+/*Comment styling*/
+
+.commentSection{
+    padding: 1rem;
+    color: white;
+    border: transparent white 0.2rem;
+}
+
+.eachComment{
+    margin-bottom: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 0.7rem;
+    border-bottom: 0.1rem solid white;
+}
+
+.user, .datetime{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.datetime{
+    font-size: 0.7rem;
+}
+
+.user{
+    font-size: 1.2rem;
+}
+
+.comment{
+    font-size: 1.1rem;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 /*Footer container styling*/

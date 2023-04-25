@@ -1,6 +1,7 @@
 <?php
-    include '../PHP/dbconnect.php';
+
     session_start();
+    include '../PHP/dbconnect.php';
 
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -19,11 +20,13 @@
         if($user['Email'] == $email && $user['Password'] == $password) {
             if($user['Permissions'] == 'admin'){
                 $_SESSION['admin'] = true;
+                $_SESSION['username'] = $user['Username'];
                 $login= true;
                 break;
             }
             else
             {   
+                $_SESSION['username'] = $user['Username'];
                 $login = true;
                 break;
             }

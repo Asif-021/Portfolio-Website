@@ -79,7 +79,12 @@
                     echo '<div class="blogEntryContainer" >';
                     echo '<h2 class="title">' . $output['Title'] . '</h2>';
                     echo '<p class="content">' . $output['Content'] . '</p>';
+                    echo '<aside>';
                     echo '<p class="date">' . $output['Date'] . '</p>';
+
+                    echo '<a href="../PHP/comments.php?post_id=' . $output['ID'] . '"> <img src="../Images/comment.png"> </a>';
+
+                    echo '</aside>';
                     echo '</div>';
 
                 }
