@@ -144,8 +144,9 @@ header nav a, #login, #logout{
 .eachComment{
     margin-bottom: 1rem;
     font-family: 'Quicksand', sans-serif;
-    padding-bottom: 0.7rem;
+    padding-bottom: 1.5rem;
     border-bottom: 0.1rem solid white;
+    position: relative;
 }
 
 .user, .datetime{
@@ -169,6 +170,25 @@ header nav a, #login, #logout{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.5rem;
+}
+
+#deleteComment{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+  
+
+img{
+    width: 2rem;
 }
 
 /*Footer container styling*/

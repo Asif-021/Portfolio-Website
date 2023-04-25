@@ -33,7 +33,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/comments.css?v=2">
+    <link rel="stylesheet" href="../CSS/comments.css?v=3">
     <script src="../JS/comment.js" defer></script>
     <?php echo '<title>Comment Section for ' . $post['Title'] . '</title>'; ?>
 </head>
@@ -71,7 +71,7 @@
                 if (isset($_SESSION['loggedIn']))
                 {
                     echo '<form id="comment-form" method="post" action="addComment.php">';
-                    echo '   <input type="text" id="comment" name="comment" placeholder="Enter your comment...">';
+                    echo '   <input type="text" id="comment" name="comment" autocomplete="off" placeholder="Enter your comment...">';
                     echo '   <input type="submit" id="postButton" value="Add Comment">';
                     echo '</form>';
                 }
@@ -89,11 +89,14 @@
                         echo '      <p class="datetime">' . $comment['datetime'] . '</p>';
                         echo '  </div>';
                         echo '  <p class="comment">' . $comment['comment'] . '</p>';
+                        if (isset($_SESSION['admin'])){
+                            echo '  <form id="deleteComment" method="post" action="deleteComment.php">';
+                            echo '      <input type="hidden" name="comment_id" value="' . $comment['comment_id'] . '">';
+                            echo '      <button type="submit"><img src="../Images/cross.png"></button>';
+                            echo '  </form>';
+                        }
                         echo '</div>';
                     }
-
-
-
 
                 ?>
             </div>

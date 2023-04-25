@@ -17,7 +17,7 @@ This information will include date, time, title and body text of the post. This 
 DONE - Assessment Criteria 7 Each time a new entry is added, the most recent post appears on top, 
 followed by the next most recent post using a PHP driven technique (writing a sorting algorithm) as opposed to a SQL Query
 
-Assessment Criteria 8 Implement an extra feature specified in the coursework specification
+DONE - Assessment Criteria 8 Implement an extra feature specified in the coursework specification
 
 Assessment Criteria 9 Implement another extra feature specified in the coursework specification	
 

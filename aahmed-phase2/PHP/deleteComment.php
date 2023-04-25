@@ -1,16 +1,11 @@
 <?php
-    
-    session_start();
+
     include '../PHP/dbconnect.php';
+    session_start();
 
+    $comment_id = $_POST['comment_id'];
 
-    $comment = $_POST['comment'];
-    $username = $_SESSION['username'];
-    $blogID = $_SESSION['blogID'];
-    $date = date('jS F Y h:i A T');
-
-    $sql = "INSERT INTO comments (post_id, username, `datetime`, comment)
-    VALUES ('$blogID', '$username', '$date', '$comment')";
+    $sql = "DELETE FROM comments WHERE comment_id = $comment_id";
 
     if ($conn->query($sql) === TRUE) {
 
@@ -29,4 +24,5 @@
     }
 
     $conn->close();
+
 ?>
