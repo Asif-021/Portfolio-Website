@@ -65,7 +65,7 @@
                     echo '<aside>';
                     echo '  <p class="date">' . $post['Date'] . '</p>';
                     if (isset($_SESSION['admin'])){
-                        echo '  <form id="deletePost" method="post" action="deletePost.php">';
+                        echo '  <form id="deletePost" method="post" action="../PHP/deletePost.php">';
                         echo '      <input type="hidden" name="post_id" value="' . $post['ID'] . '">';
                         echo '      <button type="submit"><img src="../Images/cross.png"></button>';
                         echo '  </form>';
@@ -79,7 +79,7 @@
 
                 if (isset($_SESSION['loggedIn']))
                 {
-                    echo '<form id="comment-form" method="post" action="addComment.php">';
+                    echo '<form id="comment-form" method="post" action="../PHP/addComment.php">';
                     echo '   <input type="text" id="comment" name="comment" autocomplete="off" placeholder="Enter your comment...">';
                     echo '   <input type="submit" id="postButton" value="Add Comment">';
                     echo '</form>';
@@ -99,7 +99,7 @@
                         echo '  </div>';
                         echo '  <p class="comment">' . $comment['comment'] . '</p>';
                         if (isset($_SESSION['admin'])){
-                            echo '  <form id="deleteComment" method="post" action="deleteComment.php">';
+                            echo '  <form id="deleteComment" method="post" action="../PHP/deleteComment.php">';
                             echo '      <input type="hidden" name="comment_id" value="' . $comment['comment_id'] . '">';
                             echo '      <button type="submit"><img id="deleteCommentImg" src="../Images/cross.png"></button>';
                             echo '  </form>';

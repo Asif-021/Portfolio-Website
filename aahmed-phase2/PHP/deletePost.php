@@ -10,7 +10,7 @@
     $sql2 = "DELETE FROM comments WHERE post_id = $post_id";
 
 
-    if ($conn->query($sql) === TRUE && $conn->query($sql2)) {
+    if ($conn->query($sql) === TRUE && $conn->query($sql2) === TRUE) {
 
         header('Location: ../PHP/viewBlog.php');
 

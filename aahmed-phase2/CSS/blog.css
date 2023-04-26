@@ -105,6 +105,47 @@ header nav a, #addPost, #login, #logout{
     font-weight: bold;
 }
 
+/*Filter form styling*/
+
+.filter-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#filter-form{
+
+}
+
+select, button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    height: 2rem;
+    cursor: pointer;
+}
+
+button{
+    width: auto;
+    padding: 0.1rem 0.5rem;
+    border: inset black 0.1rem;
+
+}
+
+select{
+    background-color: grey;
+    color: white;
+    height: 2rem;
+}
+
+h1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem; 
+    border-bottom: solid 0.2rem white;
+}
+
 /* Blog entry styling */
 
 .blogEntryContainer{
@@ -125,11 +166,13 @@ header nav a, #addPost, #login, #logout{
     font-size: 1.5rem;
 }
 
-aside{
+.dateimg{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
+
+
 img{
     width: 1.7rem;
     padding: 0 0 0 0;

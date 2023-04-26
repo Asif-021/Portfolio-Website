@@ -19,7 +19,7 @@ followed by the next most recent post using a PHP driven technique (writing a so
 
 DONE - Assessment Criteria 8 Implement an extra feature specified in the coursework specification
 
-Assessment Criteria 9 Implement another extra feature specified in the coursework specification	
+DONE - Assessment Criteria 9 Implement another extra feature specified in the coursework specification	
 
 DONE - Assessment Criteria 10 Is the website content relevant for a portfolio website?
 
