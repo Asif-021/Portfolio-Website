@@ -33,8 +33,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/comments.css?v=3">
+    <link rel="stylesheet" href="../CSS/comments.css?v=2">
     <script src="../JS/comment.js" defer></script>
+    <script src="../JS/delete.js" defer></script>
     <?php echo '<title>Comment Section for ' . $post['Title'] . '</title>'; ?>
 </head>
 <body>
@@ -61,7 +62,15 @@
 
                     echo '<h2 class="title">'. $post['Title']. '</h2>';
                     echo '<p class="content">' . $post['Content'] . '</p>';
-                    echo '<p class="date">' . $post['Date'] . '</p>';
+                    echo '<aside>';
+                    echo '  <p class="date">' . $post['Date'] . '</p>';
+                    if (isset($_SESSION['admin'])){
+                        echo '  <form id="deletePost" method="post" action="deletePost.php">';
+                        echo '      <input type="hidden" name="post_id" value="' . $post['ID'] . '">';
+                        echo '      <button type="submit"><img src="../Images/cross.png"></button>';
+                        echo '  </form>';
+                    }
+                    echo '</aside>'
 
                 ?>
             </div>
@@ -92,7 +101,7 @@
                         if (isset($_SESSION['admin'])){
                             echo '  <form id="deleteComment" method="post" action="deleteComment.php">';
                             echo '      <input type="hidden" name="comment_id" value="' . $comment['comment_id'] . '">';
-                            echo '      <button type="submit"><img src="../Images/cross.png"></button>';
+                            echo '      <button type="submit"><img id="deleteCommentImg" src="../Images/cross.png"></button>';
                             echo '  </form>';
                         }
                         echo '</div>';

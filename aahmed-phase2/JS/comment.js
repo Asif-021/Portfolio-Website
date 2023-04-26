@@ -9,6 +9,6 @@ function validateSubmit(e){
         alert("You cannot post an empty comment.");
     }
     else{
-        form.submit();
+        button.parentElement.submit();
     }
 }

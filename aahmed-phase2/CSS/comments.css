@@ -109,6 +109,12 @@ header nav a, #login, #logout{
     font-size: 1.5rem;
 }
 
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
 /*Comment form styling*/
 
 #comment-form {
@@ -187,7 +193,7 @@ button {
 }
   
 
-img{
+img, input[type="image"]{
     width: 2rem;
 }
 
