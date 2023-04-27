@@ -16,6 +16,7 @@
         $details[] = $row;
     }
 
+    $conn->close();
     foreach($details as $user) {
         if($user['Email'] == $email && $user['Password'] == $password) {
             if($user['Permissions'] == 'admin'){
@@ -32,6 +33,7 @@
             }
         }
     }
+
 
     if($login){
         
@@ -59,6 +61,6 @@
         header('Location: homepage.php');
     }
     
-    $conn->close();
+
 
 ?>

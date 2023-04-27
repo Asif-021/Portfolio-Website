@@ -28,6 +28,8 @@
         $filteredEntries[] = $row;
     }
 
+    $conn->close();
+
     if(isset($_SESSION['filtered'])){
 
         unset($_SESSION['filtered']);
@@ -43,16 +45,16 @@
         $_SESSION['filtered'] = true;
 
         header('Location: ../PHP/viewBlog.php');
-        exit();
+       
 
     }
     else
     {
         $_SESSION['empty'] = true;
         header('Location: ../PHP/viewBlog.php');
-        exit();
+        
     }
 
 
-    $conn->close();
+
 ?>

@@ -22,6 +22,8 @@
         $comments[] = $row;
     }
 
+    $conn->close();
+
 
 ?>
 

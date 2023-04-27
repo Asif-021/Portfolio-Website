@@ -14,6 +14,8 @@
 
     if ($conn->query($sql) === TRUE) {
 
+        $conn->close();
+
         if (isset($_SESSION['returnURL'])) {
 
             $url = $_SESSION['returnURL'];
@@ -24,9 +26,13 @@
         {
             header('Location: homepage.php');
         }
-    } else {
+    } 
+    else 
+    {
+
+        $conn->close();
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    $conn->close();
+    
 ?>

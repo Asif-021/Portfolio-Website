@@ -9,6 +9,8 @@
 
     if ($conn->query($sql) === TRUE) {
 
+        $conn->close();
+
         if (isset($_SESSION['returnURL'])) {
 
             $url = $_SESSION['returnURL'];
@@ -23,6 +25,6 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    $conn->close();
+    
 
 ?>

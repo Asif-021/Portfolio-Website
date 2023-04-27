@@ -11,10 +11,12 @@
     VALUES ('$month', '$year' ,'$date', '$title', '$content')";
 
     if ($conn->query($sql) === TRUE) {
+        $conn->close();
         header('Location: ../PHP/viewBlog.php');
     } else {
+        $conn->close();
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
-    $conn->close();
+
 ?>
