@@ -1,0 +1,22 @@
+html{
+    font-size: 12px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+#about{
+    flex-direction: column;
+}
+
+aside{
+    order: 1;
+}
+
+#info{
+    order: 2;
+}

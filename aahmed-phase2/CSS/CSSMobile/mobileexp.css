@@ -1,0 +1,16 @@
+html{
+    font-size: 12px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    margin: 2rem 4rem;
+}
+
+.desc{
+    margin: 2rem 1rem;
+}

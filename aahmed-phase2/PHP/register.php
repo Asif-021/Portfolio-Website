@@ -6,9 +6,10 @@ include '../PHP/dbconnect.php';
 
     $email = $_POST['newemail'];
     $password = $_POST['newpassword'];
+    $username = $_POST['newusername'];
 
-    $sql = "INSERT INTO loginDetails (Email, `Password`)
-    VALUES ('$email', '$password')";
+    $sql = "INSERT INTO loginDetails (Username, Email, `Password`)
+    VALUES ('$username', '$email', '$password')";
 
 
     if ($conn->query($sql) === TRUE) {

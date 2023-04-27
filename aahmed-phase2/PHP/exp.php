@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/exp.css?v=2">
+    <link rel="stylesheet" href="../CSS/exp.css">
+    <link rel="stylesheet" href="../CSS/CSSMobile/mobileexp.css" media="screen and (max-width: 768px)">
     <title>Experience & Projects</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
                     <p class="date">2021</p>
                     <p class="item">Space Invaders Game</p>
                 </div>
-                <p class = desc>Created a Space Raiders type game in Python as an introduction to coding. </p>
+                <p class = desc>Created a Space Invaders type game in Python as an introduction to coding. </p>
             </div>
             <div class="info">
                 <div class="date-item">

@@ -12,6 +12,7 @@ $_SESSION['returnURL'] = $_SERVER['REQUEST_URI'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand:wght@400;600&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/CSSMobile/mobilehomepage.css" media="screen and (max-width: 768px)">
     <link rel="stylesheet" href="../CSS/homepage.css">
     <title>Asif Ahmed's Portfolio</title>
 </head>
@@ -28,7 +29,7 @@ $_SESSION['returnURL'] = $_SERVER['REQUEST_URI'];
         <article>
             <figure>
                 <img id="initials" src="../Images/mountains.png" alt="Image to be found">
-                <figcaption>Asif Ahmed's Portfolio</figcaption>
+                <figcaption id="caption">Asif Ahmed's Portfolio</figcaption>
             </figure>
         </article> 
         <div id="login">
@@ -43,7 +44,7 @@ $_SESSION['returnURL'] = $_SERVER['REQUEST_URI'];
                 
             ?>
         </div>
-        <aside>
+        <aside id="contacts">
             <nav>
                 <a href="https://wa.me/447577862166"><img src="../Images/whatsapp.png" alt="whatsapp image"></a>
                 <a href="mailto:asif.ahmed03@outlook.com?subject=Portfolio Inquiry"><img src="../Images/outlook.png" alt="Outlook img"></a>

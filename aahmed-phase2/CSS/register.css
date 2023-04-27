@@ -42,7 +42,7 @@ label{
     font-family: 'Quicksand', 'sans-serif';
 }
 /* Style for the input fields */
-input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"], input[type="text"] {
     width: 100%;
     margin-bottom: 1rem;
     margin-top: 0.5rem;

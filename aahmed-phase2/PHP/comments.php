@@ -13,7 +13,7 @@
     $result = $conn->query($sql);
     $post = $result->fetch_assoc();
 
-    $sql = "SELECT * FROM comments WHERE post_id = $blogID";
+    $sql = "SELECT * FROM comments WHERE post_id = $blogID ORDER BY comment_id DESC";
 
     $result = $conn->query($sql);
     $comments = array();
